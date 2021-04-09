@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SwipeDragDropRecyclerView</string>
+    <string name="desfazer">Desfazer</string>
+    <string name="fruit">fruit</string>
+</resources>

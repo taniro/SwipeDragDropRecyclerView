@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content" android:layout_width="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:gravity="center_vertical"
+        android:focusable="true"
+        android:clickable="true"
+        android:id="@+id/layout_normal"
+        android:foreground="?android:attr/selectableItemBackground">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgFruta"
+            android:layout_weight="3"
+            android:src="@drawable/fruit"
+            android:contentDescription="@string/fruit" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:layout_marginStart="10dp"
+            android:id="@+id/nomeFruta" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/red"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:visibility="gone"
+        android:gravity="end|center"
+        android:id="@+id/layout_gone">
+        <Button
+            android:id="@+id/undo_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desfazer"
+            android:textAllCaps="true"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="380dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="center_horizontal|bottom"
+        />
+</FrameLayout>
